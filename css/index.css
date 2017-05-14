@@ -1,0 +1,299 @@
+.nav{
+    /*height: 44px;*/
+    /*background-color: pink;*/
+    border-bottom: 2px solid #B1191A;
+}
+.categories{
+    width: 210px;
+    height: 44px;
+    background-color: #B1191A;
+    float: left;
+    /*可以设置一个属性让某些分类显示还是隐藏*/
+}
+/*修改代码===*/
+.categories .cate-dt{
+    width: 210px;
+    height: 44px;
+    background-color: #B1191A;
+}
+.categories .cate-dt a{
+    font: 400 15px/44px "microsoft yahei";
+    color: #FFF;
+    padding:0 10px; /*padding:0 10px;/*后期修改代码*/
+    display: block;
+}
+
+/*剩下的商品分类=======开始*/
+ .cate-dd{
+     width: 209px;
+     /*height: 470px;!*暂时的*!*/
+     background-color: #C81623;
+     border-left: 1px solid #B61D1D;
+     z-index: 2;/*如果一个层设置了层级的值,那么一定要脱标*/
+     position: relative;
+     margin-top: 2px;
+}
+ .cate-dd .cate-item{
+     line-height:31px;
+     font: 400 14px/31px "microsoft yahei";
+     position: relative;
+}
+ .cate-dd .cate-item h3{
+     padding-left: 10px;
+ }
+.cate-dd .cate-item a{
+     color: #fff;
+}
+.cate-dd .cate-item i{
+     font: 400 9px/14px consolas;
+     position: absolute;
+     top:9px;
+     right: 12px;
+     color: #fff;
+ }
+/*剩下的商品分类=======结束*/
+
+
+
+
+.navitems{
+    width: 750px;
+    height: 44px;
+    /*background-color: yellow;*/
+    float: left;
+
+}
+.navitems li{
+    float: left;
+    font: 400 16px/44px "microsoft yahei";
+   /*修改代码在a中使用padding*/
+
+}
+/*设置a块,*/
+/*这是修改后的代码*/
+.navitems li a{
+    display: block;
+    padding: 0 20px;
+    position: relative;/*修改放在a中*/
+}
+.navitems i{
+    width: 36px;
+    height: 18px;
+    /*background-color: yellow;*/
+    position: absolute;
+    background: url("../images/57cd2852N89da6ac5.jpeg")0 0 no-repeat;
+    top:-0px;/*修改0*/
+    right:-16px;/*修改right*/
+}
+
+/*中间主体部分====开始*/
+.main{
+    height: 470px;
+    /*background-color: pink;*/
+}
+.slider{
+    width: 730px;
+    height: 454px;
+    /*background-color: red;*/
+    /*距离左边有像素*/
+    float: left;
+    margin-left: 220px;
+    margin-top: 12px;
+    position: relative;
+}
+/*图片的设置*/
+/*小按钮*/
+.main .slider ul{
+    /*width: 128px;*/
+    /*height: 18px;*/
+    /*background-color: red;*/
+    position: absolute;
+    left: 50%;/*因为ul要在版心的中间的位置显示,首先要脱标,然后设置left为%50,此时只是让ul左边在中间了,还需要设置margin-left:是ul宽度的一半,取的负值*/
+    margin-left:-64px ;
+    bottom: 8px;
+}
+.main .slider ul li{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-color: #3E3E3E;
+    margin-right: 4px;
+    text-align: center;
+    border-radius: 9px;
+}
+.main .slider .slder-item2{
+    background-color:#C81623;
+}
+/*中间主体焦点层====开始*/
+
+.arrow a{
+    width: 28px;
+    height: 62px;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top:50%;
+    margin-top: -31px;
+    font:400 22px/62px "simsun";
+    text-align: center;
+    color: #fff;
+}
+.arrow-left{
+    left:0;
+}
+.arrow-right{
+    right: 0;
+}
+
+
+
+.extra{
+    width: 250px;
+    /*height: 470px;*/
+    /*background-color: green;*/
+    float: right;
+    margin-top: 12px;
+}
+/*中间主体部分====结束*/
+
+/*右侧新闻模块*/
+.news{
+    width: 248px;
+    height: 163px;
+    /*background-color: pink;*/
+    border:  1px solid #E4E4E4;
+    border-bottom: 0;
+}
+/*右侧新闻中的京东快报的样式*/
+.news-mt{
+    width: 248px;
+    height: 32px;
+    border-bottom: 1px dashed #E8E8E7;
+    position: relative;
+}
+.news-mt h2{/*京东快报中的h2标签设置样式*/
+    font:400 16px/32px "microsoft yahei";
+    padding-left: 15px;
+}
+.news-mt .extra-a{/*京东快报中的"更多 >"的样式设置*/
+   position: absolute;
+    top:7px;
+    right: 12px;
+}
+/*右侧新闻模块中下面的列表内容设置*/
+.news .news-mc{
+    width: 248px;
+    height: 130px;
+}
+.news .news-mc ul{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.news .news-mc li{
+    line-height:24px;
+}
+.news .news-mc li span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.lifeservice{
+    width: 248px;
+    height: 208px;
+    /*background-color: blue;*/
+    border: 1px solid #E4E4E4;
+    overflow: hidden;
+}
+.lifeservice ul{
+    width: 252px;
+}
+.lifeservice li{
+    width: 62px;
+    height: 70px;
+    border-right: 1px #E8E8E7 solid;
+    border-bottom: 1px #E8E8E7 solid;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.lifeservice li a{
+    display: block;
+    width: 62px;
+    height: 28px;
+    padding-top: 42px;
+}
+
+/*设置每个li中i标签的图标*/
+.lifeservice li i{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    top:10px;
+    left:16px;
+    background: url("../images/57620a6fN77b2b8af.png")0 0 no-repeat;
+}
+.lifeservice li .ic2{
+    background: url("../images/57620a6fN77b2b8af.png")0 -25px no-repeat;
+}
+.lifeservice li .ic3{
+    background: url("../images/57620a6fN77b2b8af.png")0 -50px no-repeat;
+}
+.lifeservice li .ic4{
+    background: url("../images/57620a6fN77b2b8af.png")0 -75px no-repeat;
+}
+.lifeservice li .ic5{
+    background: url("../images/57620a6fN77b2b8af.png")0 -100px no-repeat;
+}
+.lifeservice li .ic6{
+    background: url("../images/57620a6fN77b2b8af.png")0 -125px no-repeat;
+}
+.lifeservice li .ic7{
+    background: url("../images/57620a6fN77b2b8af.png")0 -150px no-repeat;
+}
+.lifeservice li .ic8{
+    background: url("../images/57620a6fN77b2b8af.png")0 -175px no-repeat;
+}
+.lifeservice li .ic9{
+    background: url("../images/57620a6fN77b2b8af.png")0 -200px no-repeat;
+}
+.lifeservice li .ic10{
+    background: url("../images/57620a6fN77b2b8af.png")0 -225px no-repeat;
+}
+.lifeservice li .ic11{
+    background: url("../images/57620a6fN77b2b8af.png")0 -250px no-repeat;
+}
+.lifeservice li .ic12{
+    background: url("../images/57620a6fN77b2b8af.png")0 -275px no-repeat;
+}
+.right-pic{
+    width: 250px;
+    height: 76px;
+    /*background-color:yellow ;*/
+    margin-top: 5px;
+}
+
+/*今日推荐====开始*/
+.todays{
+    height: 175px;
+
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.todays-left{
+    width: 210px;
+    height: 151px;
+    float: left;
+}
+.todays-right{
+    width: 1000px;
+    height:164px ;
+
+    float: left;
+}
+.todays .todays-right ul{
+    width: 2000px;
+}
+.todays .todays-right li{
+    float: left;
+    margin-right: 1px;
+}
+/*今日推荐====结束*/

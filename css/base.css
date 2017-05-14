@@ -1,0 +1,436 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+/*用来做图标*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*顶部工具栏样式设置===============================开始*/
+.shortcut{
+    /*height: 30px;*/
+    background-color: #F1F1F1;
+    line-height:30px;
+}
+/*有一个bug有的时候能看到,有的时候看不到,所以,想办法就让看不到*/
+.shortcut .fr{
+    background-color: #F1F1F1;
+}
+
+.shortcut .shortdown{
+    padding-right: 25px;
+    position: relative;
+}
+.shortcut .shortdown s{
+    /*文字的大小  文字的字体 高度 加粗*/
+    font:400 15px/15px "consolas";
+    position: absolute;
+    top:-7px;
+}
+.shortcut .shortdown i{
+    width: 15px;
+    height: 8px;
+    /*background-color: pink;*/
+    position: absolute;/*行内样式如果撑开是可以设置display:block*/
+    top:12px;
+    right:8px;
+    overflow: hidden;/*这是这个属性后用户只能看到倒三角*/
+}
+/*顶部工具栏样式设置===============================结束*/
+
+
+/*顶部工具栏右侧样式设置=========================开始*/
+/*设置右侧列表显示正确方式*/
+.shortcut li{
+    float: left;
+    padding: 0 10px;
+}
+.shortcut .spacer{
+    padding: 0;
+    width: 1px;
+    height: 12px;
+    background-color: #DDD;
+    margin-top: 9px;
+}
+
+/*设置手机的小图标*/
+.shortcut .tel-li{
+    padding-left: 27px;
+    position: relative;
+}
+/*设置图标的大小*/
+.shortcut .tel-icon{
+    width: 15px;
+    height: 20px;
+    /*background-color: red;*/
+    position: absolute;
+    top:5px;
+    left:5px;
+    background: url("../images/jd2015img.png")0 0 no-repeat;
+}
+
+/*顶部工具栏右侧样式设置=========================结束*/
+
+
+/*顶部的广告栏==========开始*/
+.topbanner{
+    height: 80px;
+    background-color: #1879EC;
+
+}
+/*设置a标签的父级元素*/
+.banner-header{
+    position: relative;
+}
+/*设置a标签中如何显示图标*/
+.topbanner .close-btn{
+    width: 19px;
+    height: 19px;
+    /*background-color: red;*/
+    position: absolute;
+    top:5px;
+    right:5px;
+    background: url("../images/5507956eN735de046.png")0 0 no-repeat;
+}
+
+.topbanner .close-btn:hover{
+    background: url("../images/5507956eN735de046.png")0 -19px no-repeat;
+
+}
+
+/*顶部的广告栏==========结束*/
+
+
+
+
+/*header部分中导航----搜索----购物车----热词======开始*/
+.header{
+    /*height: 100px;*/
+    /*background-color: pink;*/
+}
+/*logo部分*/
+.header .logo{
+    width: 362px;
+    /*height: 60px;*/
+    /*background-color: red;*/
+    float: left;
+    padding: 20px 0;
+}
+.logo a{
+    width: 270px;
+    height: 60px;
+    display: block;
+    background: url("../images/logo-201305.png")0 0 no-repeat;
+    text-indent: -20000px;
+}
+/*搜索框部分*/
+.header .search{
+    /*width: 538px;*/
+    /*height: 36px;*/
+    /*background-color: green;*/
+    float: left;
+    margin-top: 25px;
+}
+/*文本框的*/
+.search .txt{
+    width: 450px;
+    height: 32px;
+    border:2px solid #B61D1D;
+    font: 400 14px/32px "microsoft yahei";
+    padding-left: 4px;
+    float: left;
+    color: rgb(153, 153, 153);
+}
+/*按钮*/
+.search .search-btn{
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    float: left;
+    font:400 16px/36px "microsoft yahei";
+    color: #fff;
+    cursor:pointer;/*hand也可以表示小手图标,有的浏览器不兼容*/
+}
+
+
+
+/*购物车部分*/
+.header .shoppingcar{
+    width: 139px;
+    height: 34px;
+    background-color: #F9F9F9;
+    border:1px solid #DFDFDF;
+    float: right;
+    margin: 25px 65px 0 0;
+    line-height:34px;
+    position: relative;
+}
+.shoppingcar a{
+
+    padding-left: 40px;
+}
+/*设置小推车图标*/
+.shoppingcar .icon1{
+    width: 18px;
+    height: 16px;
+    /*background-color: red;*/
+    position: absolute;
+    top:10px;
+    left: 19px;
+    background: url("../images/jd2015img.png")0 -58px no-repeat;
+}
+.icon2{
+    float: right;
+    font: 400 13px/13px simsun;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.icon3{
+    /*width: 16px;*/
+    height: 14px;
+    background-color: #C81623;
+    color: #fff;
+    position: absolute;
+    left:104px;
+    top:-5px;
+   line-height: 14px;
+    text-align: center;
+    border-radius: 7px 7px 7px 0;
+    padding: 0 4px;
+}
+
+/*热词部分*/
+.header .hotwords{
+    width: 538px;
+    height: 30px;
+    /*background-color: yellow;*/
+    float: left;
+}
+.hotwords li{
+    float: left;
+    margin-top: 8px;
+    margin-right: 11px;
+}
+/*header部分中导航----搜索----购物车----热词======结束*/
+
+
+
+/*底部布局============================开始*/
+.footer{
+    /*height: 500px;*/
+    /*background-color: red;*/
+}
+.service{
+    height: 296px;
+    /*background-color: green;*/
+}
+.service .slogen{
+    height: 54px;
+    background-color: #F5F5F5;
+    padding:20px 0 ;/*由于设置了paddingpx上下为20px,所以,上面的height的94px需要减掉40*/
+   position: relative;
+}
+.slogen .slogen-item{
+    /*设置图片脱标,然后left为50%,这样浏览器缩小的时候会居中显示*/
+    position: absolute;
+    left: 50%;
+}
+.slogen .slogen1{
+    margin-left:-604px;
+}
+.slogen .slogen2{
+    margin-left:-304px;
+}
+.slogen .slogen3{
+    margin-left:0;
+}
+.slogen .slogen4{
+    margin-left:305px;
+}
+.service .info{
+    height: 202px;
+    /*background-color: pink;*/
+}
+.info dl{
+    float: left;
+    width: 199px;
+    height:170px ;
+    padding-top: 24px;
+}
+.info dt{
+    font: 400 16px/24px "microsoft yahei";
+    margin-bottom: 10px;
+}
+.info .last-dl{
+    width: 100px;
+}
+
+
+
+/*地图====开始*/
+.coverage{
+    width: 210px;
+    height: 170px;
+    /*background-color: red;*/
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+    background: url("../images/20130330B_1.png")0 -131px no-repeat;
+}
+.cover-dt{
+    font: 400 16px/24px "microsoft yahei";
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.cover-dd{
+    width: 190px;
+    height: 60px;
+    padding-top: 18px;
+    padding-left: 16px;
+}
+
+.bottom{
+    height: 196px;
+    /*background-color: blue;*/
+    border-top: 1px solid #E5E5E5;
+}
+.links{
+    text-align: center;
+    margin-top: 23px;
+}
+.links a{
+    margin:0 12px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 12px;
+}
+.authentication{
+    text-align: center;
+    margin-top: 11px;
+}
+.authentication a{
+    margin-right: 13px;
+}
+/*地图====结束*/
+
+/*底部布局============================结束*/
